@@ -1,6 +1,7 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
 switch-to-activity-6eae240a-6458-472b-981a-ef8a6e20db8b=none,none,Switch to activity "Main"
+switch-to-activity-980fef97-deed-442e-b7ab-9d2c069a6535=none,none,Switch to activity "Default"
 switch-to-activity-a9e68f32-383b-477f-92be-9d26bb165947=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
@@ -81,11 +82,11 @@ Switch to Desktop 18=none,,Switch to Desktop 18
 Switch to Desktop 19=none,,Switch to Desktop 19
 Switch to Desktop 2=Meta+2\tCtrl+F2,Meta+F2\tCtrl+F2,Switch to Desktop 2
 Switch to Desktop 20=none,,Switch to Desktop 20
-Switch to Desktop 21=,,Switch to Desktop 21
-Switch to Desktop 22=,,Switch to Desktop 22
-Switch to Desktop 23=,,Switch to Desktop 23
-Switch to Desktop 24=,,Switch to Desktop 24
-Switch to Desktop 25=,,Switch to Desktop 25
+Switch to Desktop 21=none,,Switch to Desktop 21
+Switch to Desktop 22=none,,Switch to Desktop 22
+Switch to Desktop 23=none,,Switch to Desktop 23
+Switch to Desktop 24=none,,Switch to Desktop 24
+Switch to Desktop 25=none,,Switch to Desktop 25
 Switch to Desktop 3=Meta+3\tCtrl+F3,Meta+F3\tCtrl+F3,Switch to Desktop 3
 Switch to Desktop 4=Ctrl+F4\tMeta+4,Meta+F4\tCtrl+F4,Switch to Desktop 4
 Switch to Desktop 5=Meta+5,,Switch to Desktop 5
@@ -161,7 +162,7 @@ Window Quick Tile Top Left=none,,Quick Tile Window to the Top Left
 Window Quick Tile Top Right=none,,Quick Tile Window to the Top Right
 Window Raise=none,,Raise Window
 Window Resize=none,,Resize Window
-Window Shade=none,none,Shade Window
+Window Shade=none,,Shade Window
 Window Shrink Horizontal=none,,Shrink Window Horizontally
 Window Shrink Vertical=none,,Shrink Window Vertically
 Window to Desktop 1=Meta+Alt+1,,Window to Desktop 1
@@ -177,11 +178,11 @@ Window to Desktop 18=none,,Window to Desktop 18
 Window to Desktop 19=none,,Window to Desktop 19
 Window to Desktop 2=Meta+Alt+2,,Window to Desktop 2
 Window to Desktop 20=none,,Window to Desktop 20
-Window to Desktop 21=,,Window to Desktop 21
-Window to Desktop 22=,,Window to Desktop 22
-Window to Desktop 23=,,Window to Desktop 23
-Window to Desktop 24=,,Window to Desktop 24
-Window to Desktop 25=,,Window to Desktop 25
+Window to Desktop 21=none,,Window to Desktop 21
+Window to Desktop 22=none,,Window to Desktop 22
+Window to Desktop 23=none,,Window to Desktop 23
+Window to Desktop 24=none,,Window to Desktop 24
+Window to Desktop 25=none,,Window to Desktop 25
 Window to Desktop 3=Meta+Alt+3,,Window to Desktop 3
 Window to Desktop 4=Meta+Alt+4,,Window to Desktop 4
 Window to Desktop 5=Meta+Alt+5,,Window to Desktop 5
@@ -217,93 +218,10 @@ playmedia=none,,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 seekbackwardmedia=Media Rewind,Media Rewind,Media playback seek backward 5s
-seekbackwardmedialong=,,Media playback seek backward 30s
+seekbackwardmedialong=none,,Media playback seek backward 30s
 seekforwardmedia=Media Fast Forward,Media Fast Forward,Media playback seek forward 5s
-seekforwardmedialong=,,Media playback seek forward 30s
+seekforwardmedialong=none,,Media playback seek forward 30s
 stopmedia=Media Stop,Media Stop,Stop media playback
-
-[org.chromium.Chromium]
-119860B487F44CCD5C5B4137BCE4F976-autofill_card=none,none,Autofill the last used card for the current website
-119860B487F44CCD5C5B4137BCE4F976-autofill_identity=none,none,Autofill the last used identity for the current website
-119860B487F44CCD5C5B4137BCE4F976-autofill_login=none,none,Autofill the last used login for the current website
-119860B487F44CCD5C5B4137BCE4F976-generate_password=none,none,Generate and copy a new random password to the clipboard
-119860B487F44CCD5C5B4137BCE4F976-lock_vault=none,none,Lock the vault
-11FB7AEC7E0C1A0EA5B8B6FC30656CBA-autofill_card=none,none,Autofill the last used card for the current website
-11FB7AEC7E0C1A0EA5B8B6FC30656CBA-autofill_identity=none,none,Autofill the last used identity for the current website
-11FB7AEC7E0C1A0EA5B8B6FC30656CBA-autofill_login=none,none,Autofill the last used login for the current website
-11FB7AEC7E0C1A0EA5B8B6FC30656CBA-generate_password=none,none,Generate and copy a new random password to the clipboard
-11FB7AEC7E0C1A0EA5B8B6FC30656CBA-lock_vault=none,none,Lock the vault
-2E6EABE3541DAE99E276FB44B5B23A0D-c000-options-page=none,none,Open the options page
-2E6EABE3541DAE99E276FB44B5B23A0D-c020-theme-youtube-dark=none,none,Theme: YouTube™ (Dark)
-2E6EABE3541DAE99E276FB44B5B23A0D-c025-theme-enhanced-dark=none,none,Theme: Enhancer for YouTube™
-2E6EABE3541DAE99E276FB44B5B23A0D-c030-theme-youtube-deep-dark=none,none,Theme: YouTube-DeepDark
-2E6EABE3541DAE99E276FB44B5B23A0D-c040-theme-youtube-deep-dark-custom=none,none,Theme: YouTube-DeepDark (Custom)
-2E6EABE3541DAE99E276FB44B5B23A0D-c050-theme-custom-theme=none,none,Theme: Custom theme
-2E6EABE3541DAE99E276FB44B5B23A0D-c060-focus-video-player=none,none,Set focus on the video player
-2E6EABE3541DAE99E276FB44B5B23A0D-c070-toggle-loop=none,none,Toggle the loop mode
-2E6EABE3541DAE99E276FB44B5B23A0D-c080-stop-video=none,none,Stop the video
-2E6EABE3541DAE99E276FB44B5B23A0D-c090-reverse-playlist=none,none,Reverse the playlist order
-2E6EABE3541DAE99E276FB44B5B23A0D-c100-toggle-volume-booster=none,none,Toggle the volume booster
-2E6EABE3541DAE99E276FB44B5B23A0D-c130-toggle-annotations=none,none,Toggle info cards and end screens visibility
-2E6EABE3541DAE99E276FB44B5B23A0D-c140-toggle-cinema-mode=none,none,Toggle the cinema mode
-2E6EABE3541DAE99E276FB44B5B23A0D-c150-toggle-player-size=none,none,Expand or shrink the video player
-2E6EABE3541DAE99E276FB44B5B23A0D-c160-center-video-player=none,none,Center the video player within the viewport
-2E6EABE3541DAE99E276FB44B5B23A0D-c170-pop-up-player=none,none,Watch with the pop-up player
-2E6EABE3541DAE99E276FB44B5B23A0D-c180-decrease-speed=none,none,Decrease the playback speed
-2E6EABE3541DAE99E276FB44B5B23A0D-c190-increase-speed=none,none,Increase the playback speed
-2E6EABE3541DAE99E276FB44B5B23A0D-c200-default-speed=none,none,Select the default playback speed
-2E6EABE3541DAE99E276FB44B5B23A0D-c210-normal-speed=none,none,Select the normal playback speed
-2E6EABE3541DAE99E276FB44B5B23A0D-c220-toggle-video-filters=none,none,Toggle the video filters
-2E6EABE3541DAE99E276FB44B5B23A0D-c230-flip-horizontally=none,none,Flip the video horizontally
-2E6EABE3541DAE99E276FB44B5B23A0D-c240-flip-vertically=none,none,Flip the video vertically
-2E6EABE3541DAE99E276FB44B5B23A0D-c250-take-screenshot=none,none,Take a screenshot of the video
-2E6EABE3541DAE99E276FB44B5B23A0D-c260-keyboard-shortcuts=none,none,Display all the keyboard shortcuts for YouTube
-2E6EABE3541DAE99E276FB44B5B23A0D-c270-custom-script=none,none,Execute the custom script
-2E6EABE3541DAE99E276FB44B5B23A0D-c280-picture-in-picture=none,none,Toggle the Picture-in-Picture mode
-2E6EABE3541DAE99E276FB44B5B23A0D-c290-quality-highres=none,none,Select the playback quality “4320p”
-2E6EABE3541DAE99E276FB44B5B23A0D-c300-quality-hd2880=none,none,Select the playback quality “2880p”
-2E6EABE3541DAE99E276FB44B5B23A0D-c310-quality-hd2160=none,none,Select the playback quality “2160p”
-2E6EABE3541DAE99E276FB44B5B23A0D-c320-quality-hd1440=none,none,Select the playback quality “1440p”
-2E6EABE3541DAE99E276FB44B5B23A0D-c330-quality-hd1080=none,none,Select the playback quality “1080p”
-2E6EABE3541DAE99E276FB44B5B23A0D-c340-quality-hd720=none,none,Select the playback quality “720p”
-2E6EABE3541DAE99E276FB44B5B23A0D-c350-quality-large=none,none,Select the playback quality “480p”
-2E6EABE3541DAE99E276FB44B5B23A0D-c360-quality-medium=none,none,Select the playback quality “360p”
-2E6EABE3541DAE99E276FB44B5B23A0D-c370-quality-small=none,none,Select the playback quality “240p”
-2E6EABE3541DAE99E276FB44B5B23A0D-c380-quality-tiny=none,none,Select the playback quality “144p”
-2E6EABE3541DAE99E276FB44B5B23A0D-c390-quality-auto=none,none,Select the playback quality “Auto”
-2E6EABE3541DAE99E276FB44B5B23A0D-c400-comments-visibility=none,none,Toggle comments visibility
-2E6EABE3541DAE99E276FB44B5B23A0D-c410-related-videos-visibility=none,none,Toggle related videos visibility
-652E6858219F17FD23840DCA03D0F707-enter-picker-mode=none,none,Create a custom filter
-652E6858219F17FD23840DCA03D0F707-enter-zapper-mode=none,none,Remove an element
-9D2DABE56C43557636385FD0648F24FA-open-dashboard=none,none,Open dashboard
-9D2DABE56C43557636385FD0648F24FA-open-dashboard-with-running-scripts=none,none,Open dashboard with the current tab's URL used as filter
-9D2DABE56C43557636385FD0648F24FA-open-new-script=none,none,Open new script tab
-9D2DABE56C43557636385FD0648F24FA-toggle-enable=none,none,Toggle enable state
-D15ED5949B18BB73D481C47DAFEA6160-commandA=none,none,command A
-D15ED5949B18BB73D481C47DAFEA6160-commandB=none,none,command B
-D15ED5949B18BB73D481C47DAFEA6160-commandC=none,none,command C
-D15ED5949B18BB73D481C47DAFEA6160-commandD=none,none,command D
-D15ED5949B18BB73D481C47DAFEA6160-commandE=none,none,command E
-D15ED5949B18BB73D481C47DAFEA6160-commandF=none,none,command F
-D15ED5949B18BB73D481C47DAFEA6160-commandG=none,none,command G
-D15ED5949B18BB73D481C47DAFEA6160-commandH=none,none,command H
-D15ED5949B18BB73D481C47DAFEA6160-commandI=none,none,command I
-D15ED5949B18BB73D481C47DAFEA6160-commandJ=none,none,command J
-D15ED5949B18BB73D481C47DAFEA6160-commandK=none,none,command K
-D15ED5949B18BB73D481C47DAFEA6160-commandL=none,none,command L
-D15ED5949B18BB73D481C47DAFEA6160-commandM=none,none,command M
-D15ED5949B18BB73D481C47DAFEA6160-commandN=none,none,command N
-D15ED5949B18BB73D481C47DAFEA6160-commandO=none,none,command O
-D15ED5949B18BB73D481C47DAFEA6160-commandP=none,none,command P
-D15ED5949B18BB73D481C47DAFEA6160-commandQ=none,none,command Q
-D15ED5949B18BB73D481C47DAFEA6160-commandR=none,none,command R
-D15ED5949B18BB73D481C47DAFEA6160-commandS=none,none,command S
-D3D15BB97FF78FD3C72BB3DA475596FB-autofill_card=none,none,Autofill the last used card for the current website
-D3D15BB97FF78FD3C72BB3DA475596FB-autofill_identity=none,none,Autofill the last used identity for the current website
-D3D15BB97FF78FD3C72BB3DA475596FB-autofill_login=none,none,Autofill the last used login for the current website
-D3D15BB97FF78FD3C72BB3DA475596FB-generate_password=none,none,Generate and copy a new random password to the clipboard
-D3D15BB97FF78FD3C72BB3DA475596FB-lock_vault=none,none,Lock the vault
-_k_friendly_name=org.chromium.Chromium
 
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
@@ -358,6 +276,9 @@ new-window=Meta+B
 [services][cliphist-rofi.desktop]
 _launch=Meta+Alt+C
 
+[services][google-chrome.desktop]
+_launch=Meta+B
+
 [services][kitty.desktop]
 _launch=Meta+K\tCtrl+Shift+K
 
@@ -369,4 +290,5 @@ _launch=none
 
 [services][org.kde.spectacle.desktop]
 ActiveWindowScreenShot=Meta+#\tMeta+Print
+CurrentMonitorScreenShot=
 OpenWithoutScreenshot=Meta+$

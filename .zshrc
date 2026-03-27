@@ -3,9 +3,9 @@
 
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="agnosterzak"
+ZSH_THEME="robbyrussell"
 
-plugins=( 
+plugins=(
     git
     dnf
     zsh-autosuggestions
@@ -51,33 +51,71 @@ export VISUAL="nvim"
 alias sak-pdk="source ~/.local/bin/sak-pdk.sh"
 
 
+condainit() {
+  unset -f conda
+  unset -f condainit
+
+  __conda_setup="$("$HOME/Programs/miniconda3/bin/conda" shell.zsh hook 2>/dev/null)"
+  if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+  else
+    if [ -f "$HOME/Programs/miniconda3/etc/profile.d/conda.sh" ]; then
+# . "$HOME/Programs/miniconda3/etc/profile.d/conda.sh"  # commented out by conda initialize
+    else
+# export PATH="$HOME/Programs/miniconda3/bin:$PATH"  # commented out by conda initialize
+    fi
+  fi
+  unset __conda_setup
+}
+
+conda() {
+  condainit
+  conda "$@"
+}
+
+# nvim
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
+# doom 
+alias doom=$HOME/.config/emacs/bin/doom
+
+# dotfiles
+alias dot='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias lzdot='GIT_DIR=$HOME/.dotfiles GIT_WORK_TREE=$HOME lazygit'
+dot config --local status.showUntrackedFiles no
+dotuntracked() {
+  dot status -uall -- "$1"
+}
+
+# cargo
+. "$HOME/.cargo/env"
+
+alias nano=nvim
+
+eval "$(zoxide init zsh)"
+
+# for tmux renaming tabs
+precmd() {
+  printf  "\033]2;%s\033\\" "${PWD:t}"
+}
+
 if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ]; then
   exec tmux
 fi
 
 
-condainit() {
-  # >>> conda initialize >>>
-  # !! Contents within this block are managed by 'conda init' !!
-  __conda_setup="$('/home/paulkronegger/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-  if [ $? -eq 0 ]; then
-      eval "$__conda_setup"
-  else
-      if [ -f "/home/paulkronegger/miniconda3/etc/profile.d/conda.sh" ]; then
-          . "/home/paulkronegger/miniconda3/etc/profile.d/conda.sh"
-      else
-          export PATH="/home/paulkronegger/miniconda3/bin:$PATH"
-      fi
-  fi
-  unset __conda_setup
-  # <<< conda initialize <<<
-}
-
-
-# dotfiles
-alias dot='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
-
-alias nano=nvim
-
-eval "$(zoxide init zsh)"
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/paul/Programs/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/paul/Programs/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/paul/Programs/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/paul/Programs/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 

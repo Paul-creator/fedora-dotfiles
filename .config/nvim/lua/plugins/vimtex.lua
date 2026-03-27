@@ -1,14 +1,57 @@
 return {
   {
     "lervag/vimtex",
-    lazy = false, -- we don't want to lazy load VimTeX
-    -- tag = "v2.15", -- uncomment to pin to a specific release
+    lazy = false,
     init = function()
-      -- Set Skim as the PDF viewer
       vim.g.vimtex_view_method = "skim"
-      -- Additional Skim-specific settings for forward/inverse search
+
+      vim.g.vimtex_view_skim_activate = 1
       vim.g.vimtex_view_skim_sync = 1
-      vim.g.vimtex_view_skim_activate = 1 -- Skim will auto-focus when you open it
+      vim.g.vimtex_view_skim_reading_bar = 1
+
+      vim.g.vimtex_compiler_method = "latexmk"
+      vim.g.vimtex_compiler_latexmk = {
+        options = {
+          "-pdf",
+          "-synctex=1",
+          "-interaction=nonstopmode",
+          "-file-line-error",
+        },
+      }
+
+      vim.g.vimtex_quickfix_ignore_filters = {
+        "Package fancyhdr Warning",
+        "Package fancyhdr Warning: \\\\headheight is too small",
+      }
+
+      -- make \vspace{}, \[ \] visible
+      vim.g.vimtex_syntax_conceal_disable = 1
     end,
+  },
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require("lspconfig").texlab.setup({
+        settings = {
+          texlab = {
+            build = { onSave = false },
+            formatter = "latexindent",
+            latexindent = {
+              modifyLineBreaks = false,
+            },
+          },
+        },
+      })
+    end,
+  },
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        tex = { "latexindent" },
+        plaintex = { "latexindent" },
+        latex = { "latexindent" },
+      },
+    },
   },
 }
