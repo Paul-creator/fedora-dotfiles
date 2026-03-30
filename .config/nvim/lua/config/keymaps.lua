@@ -5,7 +5,7 @@
 -- go to definition
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 
--- reveal in finder
+-- reveal in dolphin (Fedora / KDE)
 vim.keymap.set("n", "O", function()
   local picker = vim.tbl_filter(function(p)
     return not p.closed
@@ -18,6 +18,6 @@ vim.keymap.set("n", "O", function()
 
   for _, item in ipairs(items) do
     local path = vim.fn.fnamemodify(item.file or item.text, ":p")
-    vim.fn.jobstart({ "open", "-R", path }, { detach = true })
+    vim.fn.jobstart({ "dolphin", "--select", path }, { detach = true })
   end
 end)
