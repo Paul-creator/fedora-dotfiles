@@ -1,10 +1,14 @@
 [Desktops]
 Id_1=f5544aa0-c31c-4755-b4fa-34347e4052ad
 Id_2=c553b4c0-24ea-4b98-b74c-534281406d20
-Id_3=de3faa4b-e73e-468e-b575-55de6f18d177
-Id_4=a0923ab6-4167-47bd-8813-4046a892b564
-Number=4
+Id_3=a0923ab6-4167-47bd-8813-4046a892b564
+Name_3=Desktop 4
+Number=3
 Rows=1
+
+[Tiling][43b4c05e-1cc3-4cda-bec0-7872dbdd88f4][3ead9db0-c217-46e1-8d87-55550a9eaa89]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][a0923ab6-4167-47bd-8813-4046a892b564][3ead9db0-c217-46e1-8d87-55550a9eaa89]
 padding=4

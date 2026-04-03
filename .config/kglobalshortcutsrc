@@ -290,5 +290,4 @@ _launch=none
 
 [services][org.kde.spectacle.desktop]
 ActiveWindowScreenShot=Meta+#\tMeta+Print
-CurrentMonitorScreenShot=
 OpenWithoutScreenshot=Meta+$
