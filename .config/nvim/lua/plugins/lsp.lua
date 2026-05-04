@@ -10,6 +10,7 @@ return {
       vim.filetype.add({
         extension = {
           vhd = "vhdl",
+          m = "matlab",
         },
       })
 
@@ -20,7 +21,33 @@ return {
         single_file_support = false,
       })
 
-      vim.lsp.enable("vhdl_ls")
+      vim.lsp.config("matlab_ls", {
+        cmd = {
+          vim.fn.stdpath("data") .. "/mason/bin/matlab-language-server",
+          "--stdio",
+        },
+
+        filetypes = { "matlab" },
+
+        root_dir = function(bufnr, on_dir)
+          local root = vim.fs.root(bufnr, { ".git" })
+          on_dir(root or vim.fn.getcwd())
+        end,
+
+        settings = {
+          MATLAB = {
+            installPath = "/home/paul/Programs/MATLAB/R2024b",
+            indexWorkspace = true,
+            matlabConnectionTiming = "onStart",
+            telemetry = false,
+          },
+        },
+      })
+
+      vim.lsp.enable({
+        "vhdl_ls",
+        "matlab_ls",
+      })
     end,
   },
 }

@@ -53,7 +53,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][2][Applets][5][Configuration][General]
-launchers=applications:systemsettings.desktop,preferred://filemanager,applications:org.mozilla.firefox.desktop,applications:kitty.desktop,applications:code.desktop,applications:org.kde.plasma-systemmonitor.desktop,applications:emacs.desktop
+launchers=applications:systemsettings.desktop,preferred://filemanager,applications:org.mozilla.firefox.desktop,applications:kitty.desktop,applications:code.desktop,applications:org.kde.plasma-systemmonitor.desktop,applications:com.rtosta.zapzap.desktop
 
 [Containments][2][Applets][6]
 immutability=1
@@ -169,10 +169,10 @@ wallpaperplugin=org.kde.slideshow
 positions={"1920x1080":[]}
 
 [Containments][24][Wallpaper][org.kde.slideshow][General]
-Image=file:///home/paul/Pictures/Backgrounds/Iphone/IMG_1073.JPG
+Image=file:///home/paul/Pictures/Backgrounds/download (50).jpeg
 SlidePaths=/home/paul/Pictures/Backgrounds/
 UncheckedSlides=/usr/share/wallpapers/Altai/,/usr/share/wallpapers/Autumn/,/usr/share/wallpapers/BytheWater/,/usr/share/wallpapers/Canopee/,/usr/share/wallpapers/Cascade/,/usr/share/wallpapers/Cluster/,/usr/share/wallpapers/Coast/,/usr/share/wallpapers/ColdRipple/,/usr/share/wallpapers/ColorfulCups/,/usr/share/wallpapers/DarkestHour/,/usr/share/wallpapers/F43/,/usr/share/wallpapers/Elarun/,/usr/share/wallpapers/EveningGlow/,/usr/share/wallpapers/FallenLeaf/,/usr/share/wallpapers/Flow/,/usr/share/wallpapers/FlyingKonqui/,/usr/share/wallpapers/Grey/,/usr/share/wallpapers/Honeywave/,/usr/share/wallpapers/IceCold/,/usr/share/wallpapers/Kay/,/usr/share/wallpapers/Kite/,/usr/share/wallpapers/Kokkini/,/usr/share/wallpapers/MilkyWay/,/usr/share/wallpapers/Mountain/,/usr/share/wallpapers/Next/,/usr/share/wallpapers/Nexus/,/usr/share/wallpapers/Nuvole/,/usr/share/wallpapers/OneStandsOut/,/usr/share/wallpapers/Opal/,/usr/share/wallpapers/Orionids/,/usr/share/wallpapers/PastelHills/,/usr/share/wallpapers/Patak/,/usr/share/wallpapers/Path/,/usr/share/wallpapers/SafeLanding/,/usr/share/wallpapers/ScarletTree/,/usr/share/wallpapers/Shell/,/usr/share/wallpapers/summer_1am/,/usr/share/wallpapers/Volna/
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/Archiv,0,980fef97-deed-442e-b7ab-9d2c069a6535,desktop:/DSPA,0,980fef97-deed-442e-b7ab-9d2c069a6535,desktop:/VHDL-Template,0,980fef97-deed-442e-b7ab-9d2c069a6535,desktop:/.zshrc,0,a9e68f32-383b-477f-92be-9d26bb165947
+screenMapping=desktop:/Archiv,0,980fef97-deed-442e-b7ab-9d2c069a6535,desktop:/VHDL-Template,0,980fef97-deed-442e-b7ab-9d2c069a6535,desktop:/.zshrc,0,a9e68f32-383b-477f-92be-9d26bb165947,desktop:/DSPA,0,980fef97-deed-442e-b7ab-9d2c069a6535
