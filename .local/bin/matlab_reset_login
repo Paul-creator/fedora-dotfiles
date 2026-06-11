@@ -1,0 +1,9 @@
+#!/usr/bin/zsh
+
+# mv ~/.MathWorks/ServiceHost ~/.MathWorks/ServiceHost.bak.$(date +%s) 2>/dev/null || true
+# mv ~/.MathWorks/MATLABConnector ~/.MathWorks/MATLABConnector.bak.$(date +%s) 2>/dev/null || true
+# mv ~/.matlab/credentials ~/.matlab/credentials.bak.$(date +%s) 2>/dev/null || true
+
+pkill -f MathWorksServiceHost || true
+pkill -f MATLABConnector || true
+pkill -f MATLAB || true

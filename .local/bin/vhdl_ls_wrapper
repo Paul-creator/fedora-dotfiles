@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+exec $HOME/.cargo/bin/vhdl_ls \
+  --libraries $HOME/.local/share/vhdl_libraries "$@"

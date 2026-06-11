@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+file="$1"
+dir="$(dirname "$file")"
+cd "$dir"
+
+case "$file" in
+  *.zip) unzip -o "$file" ;;
+  *.tar.gz|*.tgz) tar -xzf "$file" ;;
+  *.tar.bz2) tar -xjf "$file" ;;
+  *.tar.xz) tar -xJf "$file" ;;
+  *.tar) tar -xf "$file" ;;
+  *.7z) 7z x "$file" ;;
+  *.rar) unrar x "$file" ;;
+  *) ark --batch --autodestination "$file" ;;
+esac

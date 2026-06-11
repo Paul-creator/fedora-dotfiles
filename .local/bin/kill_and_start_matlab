@@ -1,0 +1,4 @@
+#!/usr/bin/zsh
+/home/paul/.local/bin/matlab_reset_login
+LD_PRELOAD=/usr/lib64/libstdc++.so.6 \
+/home/paul/Programs/MATLAB/R2024b/bin/matlab
