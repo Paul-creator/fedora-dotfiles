@@ -237,7 +237,7 @@ Sleep=Sleep,Sleep,Suspend
 Toggle Keyboard Backlight=Keyboard Light On/Off,Keyboard Light On/Off,Toggle Keyboard Backlight
 Turn Off Screen=none,none,Turn Off Screen
 _k_friendly_name=Power Management
-powerProfile=Battery,Battery\tMeta+B,Switch Power Profile
+powerProfile=Battery\tMeta+P,Battery\tMeta+B,Switch Power Profile
 
 [plasmashell]
 Slideshow Wallpaper Next Image=none,,Next Wallpaper Image
@@ -287,6 +287,9 @@ _launch=Meta+Space
 
 [services][org.kde.konsole.desktop]
 _launch=none
+
+[services][org.kde.kscreen.desktop]
+ShowOSD=Display
 
 [services][org.kde.spectacle.desktop]
 ActiveWindowScreenShot=Meta+#\tMeta+Print

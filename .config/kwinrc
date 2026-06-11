@@ -1,11 +1,10 @@
 [Desktops]
 Id_1=f5544aa0-c31c-4755-b4fa-34347e4052ad
 Id_2=f883bab0-a23b-4388-94b6-7765fa940570
-Id_3=f79c1e0c-f517-4924-b05a-998cbb4af795
-Id_4=d3fa6089-50b5-4e52-81be-2f5e3950e253
+Id_3=d3fa6089-50b5-4e52-81be-2f5e3950e253
 Name_2=Desktop 3
 Name_3=Desktop 4
-Number=4
+Number=3
 Rows=1
 
 [Tiling][2aec6789-d82c-4e23-87f0-cd2a1e11eb70][3ead9db0-c217-46e1-8d87-55550a9eaa89]
